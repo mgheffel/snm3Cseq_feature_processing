@@ -9,7 +9,7 @@ qsub -l h_mem=24G,h_rt=2:00:00 fastq_demultiplex.sh
 
 **About:**
 
-This repository contains tools to
+This repository contains tools to process allc methylation files into genomic features. Computing the features' methylation fractions in both mCG and mCH, then dropping/imputing features based on applied coverage threshold parameters. 
 ### File Contents
 
 **Scripts:** 
