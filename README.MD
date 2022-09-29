@@ -1,12 +1,5 @@
 ### snm3Cseq feature processing scripts
 
-**Basic Operation:**
-
-```
-python fastq_demultiplex.py
-qsub -l h_mem=24G,h_rt=2:00:00 fastq_demultiplex.sh
-```
-
 **About:**
 
 This repository contains tools to process allc methylation files into genomic features. Computing the features' methylation fractions in both mCG and mCH, then dropping/imputing features based on applied coverage threshold parameters. 
@@ -32,4 +25,12 @@ This repository contains tools to process allc methylation files into genomic fe
 	* min_mean_feature_coverage : remove features with mean coverage across all cells < this value
 	* feature_impute_threshold : cells with coverage on features passing QC < this value will be imputed by the mean value for this feature
 
+**Usage:**
 
+```
+python allc_to_csv.py $allc_file_path $bin_size $reference_genome_path $bed_file_path $out_prefix
+
+python allcDir_toScanpy.py $allc_dir $out_prefix
+
+python frac_impute_sample.py $sample_root
+```
