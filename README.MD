@@ -5,7 +5,7 @@
 This repository contains tools to process allc methylation files into genomic features. Computing the features' methylation fractions in both mCG and mCH, then dropping/imputing features based on applied coverage threshold parameters. 
 ### File Contents
 
-**Scripts:** 
+**Scripts:** <br />
 **allc_to_csv.py** : converts allc methylation file to four csvs (gene CH methylation, gene CG methylation, bin CH mathylation, and bin CG methylation) for processing by allcDir_toScanpy.py. 
 * Parameters:
 	* allc_file_path : path to allc file on drive (.allc)
