@@ -32,5 +32,4 @@ This repository contains tools to
 	* min_mean_feature_coverage : remove features with mean coverage across all cells < this value
 	* feature_impute_threshold : cells with coverage on features passing QC < this value will be imputed by the mean value for this feature
 
-**Note on File Paths:**
-the .py script assumes that .fastqs are stored in subdirectory "fastq/". edit paths in line 8 and line 16 of fastq_demultiplex.py accordingly if the location of input .fastq files or barcode locations are respectively moved.
+
