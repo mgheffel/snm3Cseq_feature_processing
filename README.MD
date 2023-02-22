@@ -6,7 +6,7 @@ This repository contains tools to process allc methylation files into genomic fe
 ### File Contents
 
 **Scripts:** <br />
-**allc_to_csv.py** : converts allc methylation file to four csvs (gene CH methylation, gene CG methylation, bin CH mathylation, and bin CG methylation) for processing by allcDir_toScanpy.py. 
+**allc_to_csv.py** : converts allc methylation file to four csvs (gene CH methylation, gene CG methylation, bin CH methylation, and bin CG methylation) for processing by allcDir_toScanpy.py. 
 * Parameters:
 	* allc_file_path : path to allc file on drive (.allc)
 	* bin_size : base pair length of genomic bins to calculate across the entire genome
